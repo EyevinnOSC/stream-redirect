@@ -15,4 +15,4 @@ Deploy this as a [Web Runner](https://app.osaas.io/dashboard/service/eyevinn-web
 
 Obtain the URL to your web runner instance and open the URL `https://<webrunner>/play/oscdemo` and it will redirect and play the URL specified in the configuration.
 
-
+![screenshot](screenshot.png)
