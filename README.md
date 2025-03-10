@@ -9,7 +9,7 @@ Deploy this as a [Web Runner](https://app.osaas.io/dashboard/service/eyevinn-web
 ## Get started
 
 1. Fork this repository.
-2. Deploy this repository as a Web Runner in Eyevinn OSC. See [Web Runner documentation](https://docs.osaas.io/osaas.wiki/Service%3A-Web-Runner.html) for instructions.
+2. Deploy the forked repository as a Web Runner in Eyevinn OSC. See [Web Runner documentation](https://docs.osaas.io/osaas.wiki/Service%3A-Web-Runner.html) for instructions.
 3. Go to [Application Config Service](https://app.osaas.io/dashboard/service/eyevinn-app-config-svc) and click on the instance called `streamredirector`
 4. Enter a name of your stream, e.g. `oscdemo` and a URL to the stream
 
