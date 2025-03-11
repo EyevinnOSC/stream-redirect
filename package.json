@@ -14,6 +14,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@fastify/cors": "^11.0.0",
     "@osaas/client-core": "^0.15.1",
     "@osaas/client-db": "^0.5.2",
     "@osaas/client-services": "^0.10.0",

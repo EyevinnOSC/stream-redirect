@@ -2,6 +2,7 @@ import { Context } from "@osaas/client-core";
 import { setupDatabase } from "@osaas/client-db";
 import { createEyevinnAppConfigSvcInstance, EyevinnAppConfigSvc, getEyevinnAppConfigSvcInstance } from "@osaas/client-services";
 import fastify from "fastify";
+import cors from '@fastify/cors';
 
 async function initConfigService(ctx: Context): Promise<EyevinnAppConfigSvc> {
   let instance = await getEyevinnAppConfigSvcInstance(ctx, 'streamredirector');
@@ -33,6 +34,10 @@ async function readConfigVariable(service: EyevinnAppConfigSvc, key: string) {
 async function main() {
   const ctx = new Context();
   const server = fastify();
+  server.register(cors, {
+    origin: '*',
+    methods: ['REDIRECT'],
+  });
   const configService = await initConfigService(ctx);
   if (!configService) {
     console.error('Failed to initialize config service');
